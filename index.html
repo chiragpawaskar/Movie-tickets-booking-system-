@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CineQueue</title>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <div class="nav-main">
+          <a href="./index.html"><img src="./media/logobms.png" alt="logo" class="logo" height="50px" width="150px" /></a>
+          <input type="text" name="searchbar" id="searchbar" placeholder="SKIP QUEUES,NOT MOVIES" />
+          
+        </div>
+    
+      </div>
+    </div>
+    <div class="banner-wrapper">
+      
+      </div>
+    </div>
+    <div class="carousal-wrapper">
+      <div class="carousal-container">
+        <i class="ms-Icon ms-Icon--ChevronLeftMed" id="prevBtn"></i>
+        <i class="ms-Icon ms-Icon--ChevronRightMed" id="nextBtn"></i>
+        <!-- Radio Buttons -->
+        <input type="radio" id="radio1" name="carousal-radio-btn" value="1" checked />
+        <input type="radio" id="radio2" name="carousal-radio-btn" value="2" />
+        <input type="radio" id="radio3" name="carousal-radio-btn" value="3" />
+        <input type="radio" id="radio4" name="carousal-radio-btn" value="4" />
+        <input type="radio" id="radio5" name="carousal-radio-btn" value="5" />
+        <!-- **** -->
+        <div class="manual-btn-list">
+          <label for="radio1" class="manual-btn bt1"></label>
+          <label for="radio2" class="manual-btn bt2"></label>
+          <label for="radio3" class="manual-btn bt3"></label>
+          <label for="radio4" class="manual-btn bt4"></label>
+          <label for="radio5" class="manual-btn bt5"></label>
+        </div>
+        <div class="carousal-slide">
+          <img data-movieid="0" src="./media/carousel/dono-poster-4.jpg" alt="" />
+          <img data-movieid="1" src="./media/carousel/Fukrey 3.jpeg" alt="" />
+          <img data-movieid="2" src="./media/carousel/Khushi.jpg" alt="" />
+          <img data-movieid="3" src="./media/carousel/Jawan.webp" alt="" />
+          <img data-movieid="4" src="./media/carousel/Raniganj.jpg" alt="" />
+          <img data-movieid="5" src="./media/carousel/Exorcist.jpg" alt="" />
+          <img data-movieid="6" src="./media/carousel/atma.jpg" alt="" />
+          <img data-movieid="7" src="./media/carousel/ankush.jpg" alt="" />
+          <img data-movieid="8" src="./media/carousel/800.jpg" alt="" />
+          <img data-movieid="9" src="./media/carousel/vaccine.jpg" alt="" />
+          <img data-movieid="0" src="./media/carousel/dono-poster-4.jpg" alt="" />
+          <img data-movieid="1" src="./media/carousel/Fukrey 3.jpeg" alt="" />
+          <img data-movieid="2" src="./media/carousel/Khushi.jpg" alt="" />
+          <img data-movieid="3" src="./media/carousel/Jawan.webp" alt="" />
+          <img data-movieid="4" src="./media/carousel/Raniganj.jpg" alt="" />
+          <img data-movieid="5" src="./media/carousel/Exorcist.jpg" alt="" />
+          <img data-movieid="6" src="./media/carousel/atma.jpg" alt="" />
+          <img data-movieid="7" src="./media/carousel/ankush.jpg" alt="" />
+          <img data-movieid="8" src="./media/carousel/800.jpg" alt="" />
+          <img data-movieid="9" src="./media/carousel/vaccine.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="movie-wrapper">
+      <div class="m-heading">
+        <h2 class="m-head">Recommended Movies</h2>
+        <p class="m-link" id="viewAll">See all <span class="small-chev">></span></p>
+      </div>
+      <div class="movie-list-wrapper">
+        <i class="ms-Icon ms-Icon--ChevronLeftMed hide" id="mprevBtn"></i>
+        <i class="ms-Icon ms-Icon--ChevronRightMed" id="mnextBtn"></i>
+        <div class="movie-list">
+        
+          <div class="movie-list-item" data-movieid="0">
+            <img src="./media/movies/mov1.jpg" alt="movie-poster" />
+            <h4>Dono</h4>
+            <p>Romance/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="1">
+            <img src="./media/movies/mov2.jpg" alt="movie-poster" />
+            <h4>Fukrey 3</h4>
+            <p>Comedy/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="2">
+            <img src="./media/movies/mov3.jpg" alt="movie-poster" />
+            <h4>Kushi</h4>
+            <p>Romance/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="3">
+            <img src="./media/movies/mov4.jpg" alt="movie-poster" />
+            <h4>Jawan</h4>
+            <p>Action/Thriller</p>
+          </div>
+          <div class="movie-list-item" data-movieid="4">
+            <img src="./media/movies/mov5.jpg" alt="movie-poster" />
+            <h4>Mission Raniganj</h4>
+            <p>Historical/Thriller/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="5">
+            <img src="./media/movies/mov6.jpg" alt="movie-poster" />
+            <h4>Exorcist</h4>
+            <p>Horror/Thriller</p>
+          </div>
+          <div class="movie-list-item" data-movieid="6">
+            <img src="./media/movies/mov7.jpg" alt="movie-poster" />
+            <h4>Aatmapamphlet</h4>
+            <p>Comedy/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="7">
+            <img src="./media/movies/mov8.jpg" alt="movie-poster" />
+            <h4>Ankush</h4>
+            <p>Action/Drama</p>
+          </div>
+          <div class="movie-list-item" data-movieid="8">
+            <img src="./media/movies/mov9.jpg" alt="movie-poster" />
+            <h4>800 The Movie</h4>
+            <p>Biography/Sports</p>
+          </div>
+          <div class="movie-list-item" data-movieid="9">
+            <img src="./media/movies/mov10.jpg" alt="movie-poster" />
+            <h4>The Vaccine War</h4>
+            <p>Drama</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="./dataserver.js"></script>
+    <script src="./dataprovider.js"></script>
+    <script src="./index.js"></script>
+    <script src="./carousal.js"></script>
+  </body>
+</html>

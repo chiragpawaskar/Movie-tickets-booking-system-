@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Module</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div id="admin-container">
+        <h2>Admin Module</h2>
+        <div id="user-info">
+            <!-- Display user information here -->
+        </div>
+        <ul>
+            <li><a href="userman.html" id="user-management">User Management</a></li>
+            <li><a href="movieman.html" id="movie-management">Movie Management</a></li>
+            <li><a href="showman.html" id="show-management">Show Management</a></li>
+        </ul>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        // Retrieve user information from localStorage
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        if (loggedInUser) {
+            // Display user information
+            const userInfo = document.getElementById("user-info");
+            userInfo.innerHTML = `<p>Welcome, ${loggedInUser.username} (${loggedInUser.role})</p>`;
+        } else {
+            // Handle the case where the user is not logged in
+            window.location.href = "login.html"; // Redirect to login.html
+        }
+
+        // Rest of the admin module code (user, movie, show management) remains the same
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+body {
+ 
+    background:linear-gradient(#050505, #060606);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+  background-position: center;
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Logo {
+  
+    left:500px;
+    position:relative;
+    width: 460px;
+    height: 330px;
+  }
+  
+  .h1 {
+    text-align: center;
+    font-family:Oswald;
+    letter-spacing: 1px;
+    color: #e41414;
+    font-size: 36px;
+    margin-top: 10px;
+  }
+  
+  .moto {
+    text-align: center;
+    font-family:Oswald;
+    letter-spacing: 1px;
+    color: #dae508;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .quote {
+    text-align: center;
+    font-family:Oswald;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top:10px;
+    font-style: italic;
+  }
+  
+  .intro {
+    text-align:center;
+    font-family:cursive;
+    letter-spacing: 2px;
+    color: #f604b6;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    position: relative;
+    left:670px;
+    background-color: #12a1d5;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:1000;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    color: #12a1d5;
+    background-color: #ffffff;
+  }

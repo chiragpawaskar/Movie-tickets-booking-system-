@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <div>
+        <h2>Registered Users</h2>
+        <ul id="userList"></ul>
+    </div>
+
+    <script>
+        function displayUsers() {
+            const userList = document.getElementById("userList");
+
+            // Clear the existing list
+            userList.innerHTML = "";
+
+            // Get the user data from local storage
+            const keys = Object.keys(localStorage);
+
+            // Iterate through keys and add them to the list
+            keys.forEach(username => {
+                if (username !== "loggedInUser") {
+                    const userData = JSON.parse(localStorage.getItem(username));
+                    if (userData) {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = `Username: ${userData.username}, Password: ${userData.password}`; // Modify this to display user info as needed
+                        userList.appendChild(listItem);
+                    }
+                }
+            });
+        }
+
+        // Display the list of registered users on page load
+        displayUsers();
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BookMyShow</title>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="gray">
+    <div class="seat-modal">
+      <!-- Modal content -->
+      <div class="seat-modal-content">
+        <p>How Many Seats?</p>
+        <div class="seat-image">
+          <img src="./media/seatno/seat2.png" alt="image" />
+        </div>
+        <div class="seat-no-list">
+          <!-- Radio Buttons -->
+          <input type="radio" id="sradio1" name="sradio-btn" value="1" />
+          <input type="radio" id="sradio2" name="sradio-btn" value="2" checked />
+          <input type="radio" id="sradio3" name="sradio-btn" value="3" />
+          <input type="radio" id="sradio4" name="sradio-btn" value="4" />
+          <input type="radio" id="sradio5" name="sradio-btn" value="5" />
+          <input type="radio" id="sradio6" name="sradio-btn" value="6" />
+          <input type="radio" id="sradio7" name="sradio-btn" value="7" />
+          <input type="radio" id="sradio8" name="sradio-btn" value="8" />
+          <input type="radio" id="sradio9" name="sradio-btn" value="9" />
+          <input type="radio" id="sradio10" name="sradio-btn" value="10" />
+          <!-- **** -->
+          <label for="sradio1" class="seat-no-list-item">1</label>
+          <label for="sradio2" class="seat-no-list-item sn-active">2</label>
+          <label for="sradio3" class="seat-no-list-item">3</label>
+          <label for="sradio4" class="seat-no-list-item">4</label>
+          <label for="sradio5" class="seat-no-list-item">5</label>
+          <label for="sradio6" class="seat-no-list-item">6</label>
+          <label for="sradio7" class="seat-no-list-item">7</label>
+          <label for="sradio8" class="seat-no-list-item">8</label>
+          <label for="sradio9" class="seat-no-list-item">9</label>
+          <label for="sradio10" class="seat-no-list-item">10</label>
+        </div>
+        <div class="seat-price-details">
+          <p class="seat-class">CLASSIC</p>
+          <p class="seat-cost">Rs. <span>00.00</span></p>
+          <p class="seat-avail">Available</p>
+        </div>
+        <a href="#" class="select-seat-btn">Select Seats</a>
+      </div>
+    </div>
+    <!--  MODAL ENDS-->
+    <div class="ticket-details">
+      <div class="ticket-details-left">
+        <i class="ms-Icon ms-Icon--ChevronLeft ticket-back" onclick="seatLayout.backToMoviePage()"></i>
+        <div class="ticket-show-details">
+          <div class="ticket-movie-name"><span>xxxx</span> &nbsp;<span class="ua-cert">UA</span></div>
+          <div class="ticket-theatre-name">xxxx</div>
+        </div>
+      </div>
+      <div class="ticket-details-right">
+        <a href="#" class="no-of-tickets"
+          ><span>2</span> Tickets
+          <i class="ms-Icon ms-Icon--ChevronDown"></i>
+        </a>
+        <a href="./index.html">
+          <i class="ms-Icon ms-Icon--ChromeClose ticket-close"></i>
+        </a>
+      </div>
+    </div>
+    <div class="ticket-timings"></div>
+    <div class="seat-grid-area">
+      <div class="seat-class-head">CLASSIC Rs. <span>00.00</span></div>
+      <div class="seat-grid">
+        <div class="seat-row">
+          <div class="seat-row-head">D</div>
+          <div class="seat-column-list">
+            <div class="seat-column" data-seat="D1">1</div>
+            <div class="seat-column" data-seat="D2">2</div>
+            <div class="seat-column" data-seat="D3">3</div>
+            <div class="seat-column" data-seat="D4">4</div>
+            <div class="seat-column" data-seat="D5">5</div>
+            <div class="seat-spacer"></div>
+            <div class="seat-column" data-seat="D6">6</div>
+            <div class="seat-column" data-seat="D7">7</div>
+            <div class="seat-column" data-seat="D8">8</div>
+            <div class="seat-column" data-seat="D9">9</div>
+            <div class="seat-column" data-seat="D10">10</div>
+          </div>
+        </div>
+        <div class="seat-row">
+          <div class="seat-row-head">C</div>
+          <div class="seat-column-list">
+            <div class="seat-column" data-seat="C1">1</div>
+            <div class="seat-column" data-seat="C2">2</div>
+            <div class="seat-column" data-seat="C3">3</div>
+            <div class="seat-column" data-seat="C4">4</div>
+            <div class="seat-column" data-seat="C5">5</div>
+            <div class="seat-spacer"></div>
+            <div class="seat-column" data-seat="C6">6</div>
+            <div class="seat-column" data-seat="C7">7</div>
+            <div class="seat-column" data-seat="C8">8</div>
+            <div class="seat-column" data-seat="C9">9</div>
+            <div class="seat-column" data-seat="C10">10</div>
+          </div>
+        </div>
+        <div class="seat-row">
+          <div class="seat-row-head">B</div>
+          <div class="seat-column-list">
+            <div class="seat-column" data-seat="B1">1</div>
+            <div class="seat-column" data-seat="B2">2</div>
+            <div class="seat-column" data-seat="B3">3</div>
+            <div class="seat-column" data-seat="B4">4</div>
+            <div class="seat-column" data-seat="B5">5</div>
+            <div class="seat-spacer"></div>
+            <div class="seat-column" data-seat="B6">6</div>
+            <div class="seat-column" data-seat="B7">7</div>
+            <div class="seat-column" data-seat="B8">8</div>
+            <div class="seat-column" data-seat="B9">9</div>
+            <div class="seat-column" data-seat="B10">10</div>
+          </div>
+        </div>
+        <div class="seat-row">
+          <div class="seat-row-head">A</div>
+          <div class="seat-column-list">
+            <div class="seat-column" data-seat="A1">1</div>
+            <div class="seat-column" data-seat="A2">2</div>
+            <div class="seat-column" data-seat="A3">3</div>
+            <div class="seat-column" data-seat="A4">4</div>
+            <div class="seat-column" data-seat="A5">5</div>
+            <div class="seat-spacer"></div>
+            <div class="seat-column" data-seat="A6">6</div>
+            <div class="seat-column" data-seat="A7">7</div>
+            <div class="seat-column" data-seat="A8">8</div>
+            <div class="seat-column" data-seat="A9">9</div>
+            <div class="seat-column" data-seat="A10">10</div>
+          </div>
+        </div>
+      </div>
+      <div class="theatre-screen">
+        <div class="screen">Theatre Screen</div>
+        All eyes this way please!
+      </div>
+    </div>
+    <div class="seat-availibility">
+      <div class="seat-availibility-item">
+        <div class="seat-column seat-disabled"></div>
+        <p>Sold</p>
+      </div>
+      <div class="seat-availibility-item">
+        <div class="seat-column"></div>
+        <p>Available</p>
+      </div>
+      <div class="seat-availibility-item">
+        <div class="seat-column seat-selected-example"></div>
+        <p>Selected</p>
+      </div>
+    </div>
+    <div class="seat-confirm">
+      <a href="ticket.html" class="seat-confirm-btn">Pay Rs. <span>00.00</span></a>
+    </div>
+    <script src="./dataserver.js"></script>
+    <script src="./dataprovider.js"></script>
+    <script src="./seatlayout.js"></script>
+  </body>
+</html>

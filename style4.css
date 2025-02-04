@@ -1,0 +1,208 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body background */
+body {
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+    background-color: #03b8f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the admin container */
+#admin-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the admin module title */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the user information container */
+#user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the navigation menu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style the links in the navigation menu */
+a {
+    text-decoration: none;
+    color: #dbdee1;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #080808;
+}
+
+/* Style the content container */
+#content {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #admin-container {
+        width: 90%;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background: #2196F3;
+  margin: 0 10px;
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  position: relative;
+  left: 100px;
+  width: 70px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #120a0a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
